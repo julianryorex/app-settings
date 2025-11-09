@@ -1,0 +1,59 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+k",
+        "command": "cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+l",
+        "command": "composerMode.chat"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.enableCppGlobally"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "editor.cpp.disableenabled"
+    },
+    {
+        "key": "alt+down",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "-workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+up",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+up",
+        "command": "-workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    }
+]
