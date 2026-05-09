@@ -1,8 +1,23 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "atomKeymap.promptV3Features": true,
+    // --- Editor ---
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": true,
+    // --- Diff editor ---
+    "diffEditor.ignoreTrimWhitespace": false,
+    // --- Files ---
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    // --- Security ---
+    "security.workspace.trust.untrustedFiles": "open",
+    // --- Terminal ---
+    "terminal.integrated.scrollback": 10000,
+    // --- Language-specific ---
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -15,12 +30,8 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": "off"
     },
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.formatOnSave": true,
-    "vsicons.dontShowNewVersionMessage": true,
-    "dart.runPubGetOnPubspecChanges": "never",
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -28,35 +39,36 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
+    // --- Dart / Flutter ---
     "dart.debugExternalPackageLibraries": false,
     "dart.debugSdkLibraries": false,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "git.openRepositoryInParentFolders": "never",
-    "workbench.colorTheme": "Atom One Dark",
-    "git.confirmSync": false,
-    "nrf-connect.enableTelemetry": false,
-    "makefile.configureOnOpen": false,
-    "makefile.configureOnEdit": false,
-    "makefile.configureAfterCommand": false,
-    "makefile.buildBeforeLaunch": false,
-    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "dart.runPubGetOnPubspecChanges": "never",
     "flutter-coverage.sufficientCoverageThreshold": 80,
+    // --- Python extension ---
+    "python.createEnvironment.trigger": "off",
+    "python.experiments.enabled": false,
+    // --- Workbench ---
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.iconTheme": "vscode-icons",
+    // --- Git ---
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "never",
+    "git.replaceTagsWhenPull": true,
+    // --- Cursor ---
+    "cursor.composer.shouldChimeAfterChatFinishes": true,
+    "cursor.preferNotificationsSameAsChat": true,
+    // --- Other extensions ---
+    "atomKeymap.promptV3Features": true,
     "coverage-gutters.showLineCoverage": true,
     "hediet.vscode-drawio.resizeImages": null,
     "hediet.vscode-drawio.theme": "min",
-    "python.experiments.enabled": false,
-    "python.createEnvironment.trigger": "off",
-    "files.exclude": {
-        "**/__pycache__": true
-    },
-    "workbench.activityBar.orientation": "vertical",
-    "cursor.preferNotificationsSameAsChat": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "lldb.suppressUpdateNotifications": true,
-    "cursor.composer.shouldChimeAfterChatFinishes": true,
-    "terminal.integrated.scrollback": 10000,
-    "editor.minimap.enabled": true,
-    "git.replaceTagsWhenPull": true
+    "makefile.buildBeforeLaunch": false,
+    "makefile.configureAfterCommand": false,
+    "makefile.configureOnEdit": false,
+    "makefile.configureOnOpen": false,
+    "nrf-connect.enableTelemetry": false,
+    "vsicons.dontShowNewVersionMessage": true
 }
