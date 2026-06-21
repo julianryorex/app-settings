@@ -5,7 +5,6 @@
     "command": "cursorai.action.generateInTerminal",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
-
   {
     "key": "ctrl+shift+alt+cmd+a",
     "command": "workbench.action.maximizeChatSize",
@@ -43,5 +42,4 @@
     "command": "-markdown-preview-enhanced.openPreviewToTheSide",
     "when": "editorLangId == 'markdown'"
   }
-
 ]
