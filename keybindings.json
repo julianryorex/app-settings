@@ -6,6 +6,11 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
     "key": "ctrl+shift+alt+cmd+a",
     "command": "workbench.action.maximizeChatSize",
     "when": "cursor.agentIdeUnification.enabled"
@@ -27,7 +32,7 @@
     "key": "ctrl+shift+alt+cmd+p",
     "command": "composerMode.plan"
   },
-    {
+  {
     "key": "ctrl+shift+alt+cmd+\\",
     "command": "runCommands",
     "args": {
